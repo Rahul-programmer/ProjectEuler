@@ -39,5 +39,5 @@ public class prblm3 {
 		
 	}
 	}
-		
+	/*OUTPUT-6857*/	
 		
