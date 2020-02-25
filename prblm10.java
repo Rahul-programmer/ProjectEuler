@@ -1,3 +1,6 @@
+/*The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
+
+Find the sum of all the primes below two million.*/
 /**
  * 
  */
@@ -28,17 +31,18 @@ public class prblm10 {
 	}
 	public static boolean isprime(int no)
 	{
-		boolean flag = false;
-	 for(int i=2;i<=(no/2);i++)
+		int k =(int) Math.sqrt(no);
+	 for(int i=2;i<=k;i++)
 	 {
-		 if(no%i!=0)
+		 if(no%i==0)
 		 {
-			 flag =true;
+			 return false;
 		 }
 	 }
-	 	return flag;
+	 	return true;
 		
 	}
 		
 
 }
+/*OUTPUT-142913828922*/
