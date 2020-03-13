@@ -18,8 +18,8 @@ public class prblm7 {
 	 */
 	public static void main(String[] args) {
 		int Switch = 1;
-		int count =1;
-		int prime =0;
+		int count =2;
+		int prime =5;
 		while(Switch==1)
 		{
 			if(isprime(count))
