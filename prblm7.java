@@ -44,20 +44,32 @@ public class prblm7 {
 		// TODO Auto-generated method stub
 
 	}
-	public static boolean isprime(int n)
+	public static boolean isprime(int no)
 	{
-		int k = (int)Math.sqrt(n);
-		
-		for(int i=2;i<=k;i++)
+		if(no<=1)
 		{
-			if(n%i==0)
+			return false;
+		}
+		if(no<=3)
+		{
+			return false;
+		}
+		if(no%2==0||no%3==0)
+		{
+			return false;
+		}
+		for(int i =5;i*i<=no;i=i+6)
+		{
+			
+			if(no%i==0||no%(i+2)==0)
 			{
 				return false;
 			}
 		}
 		return true;
 		
-	}
+ 
+}
 
 }
 /*OUTPUT-104743*/
