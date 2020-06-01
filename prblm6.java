@@ -26,19 +26,17 @@ public class prblm6 {
 		int sum2=0;
 		int diff;
 		int sum=0;
+		int n =100;
 		
-		for(int i=1;i<=100;i++)
-		{
-			sum1 =sum1+(i*i);
-		}
-		for(int i = 1;i<=100;i++)
-		{
-			 sum = sum+i;
-		}
-		sum2=sum*sum;
-		diff = sum2-sum1;
+		sum1 = (n*(n+1))/2;
+		sum1=sum1*sum1;
+		sum2 = (n*(n+1)*((2*n)+1))/6;
+		diff = sum1-sum2;
 		System.out.println(diff);
-	}
+	
+
+}
+	
 
 }
 /*OUTPUT-25164150*/
