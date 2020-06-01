@@ -9,7 +9,7 @@ Find the product abc.*/
 /**
  * 
  */
-package ProjectEluer;
+
 
 /**
  * @author DELL
@@ -21,18 +21,18 @@ public class prblm9 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		int limit =500;
-		int m,n,a,b,c;
-		for( m=1;m<limit;m++) {
-			for(n=(m+1);n<limit;n++)
+		int limit=1000;
+		int a,b,c;
+		for( a=1;a<limit;a++) {
+			for(b=(a+1);b<limit;b++)
 			{
-				a=(n*n)-(m*m);
-				b=2*m*n;
-				c=(n*n)+(m*m);
-				if(a+b+c=1000)
+				c=limit-a-b;
+				
+				if(a*a+b*b==c*c)
 				{
 					System.out.println(a*b*c);
 				}
+				
 			}
 		}
 		
@@ -40,4 +40,5 @@ public class prblm9 {
 	}
 
 }
+
 /*OUTPUT-31875000*/
