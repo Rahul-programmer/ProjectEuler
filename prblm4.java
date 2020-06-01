@@ -21,9 +21,9 @@ public class prblm4 {
 		int largest =1;
 		
 		
-		for(i=100;i<999;i++)
+		for(i=999;i>=100;i--)
 		{
-			for(j=100;j<999;j++)
+			for(j=999;j>=100;j--)
 			{
 				product = i*j;
 				
