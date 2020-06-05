@@ -27,17 +27,34 @@ public class prblm4 {
 			{
 				product = i*j;
 				
-				StringBuilder st = new StringBuilder(""+product);
-				String s = ""+product;
-				st.reverse();
-				if(s.equals(st.toString()) && largest<product) {
-                    largest = product;
+				if(ispalindrome(product)){
+					if(product>largest){
+						largest = product;
+					}
+				}
 				
 			}
 		}
-	}
+	
 		System.out.println(largest);
+	
 }
+	private static boolean ispalindrome(int num){
+		int divisor =1;
+		while(num/divisor>=10){
+			divisor =divisor*10;
+		}
+		while(num!=0){
+			int first  = num/divisor;
+			int last = num%10;
+			if(first!=last){
+				return false;
+			}
+			num =(num/divisor)%10;
+			divisor =divisor/100;
+		}
+		return true;
+	}
 }
 /*OUTPUT-906609*/
 
