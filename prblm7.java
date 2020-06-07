@@ -22,19 +22,19 @@ public class prblm7 {
 		int prime =5;
 		while(Switch==1)
 		{
-			if(isprime(count))
+			if(isprime(prime))
 			{
-				count = count+2;
-				prime = prime+1;
+				count = count+1;
+				prime = prime+2;
 			}
 			else
 			{
-				count = count+2;
+				prime  = prime+2;
 			}
-			if(prime==10001)
+			if(count==10001)
 			{
 				Switch =0;
-				System.out.println(count-2);
+				System.out.println(prime-2);
 			}
 			
 			
